@@ -143,7 +143,7 @@ function Dung(_game) {
 				break;
 			
 			case -5:
-				this.start(Math.random() * 3000); // 떨어지는 간격으로 추정
+				this.start(Math.random() * 4000); // 떨어지는 간격으로 추정
 
 			}
 
