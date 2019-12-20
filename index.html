@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html style= "background:url(background2.jpg); background-size: 100vh; background-repeat: repeat-x;">
+<title>길거리 빌런 피하기 게임</title>
+	<head>
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Press+Start+2P&display=swap" rel="stylesheet">
+		
+	</head>
+	<body id="wrap" style="margin:0; padding:0; width:100%;height: 90vh;overflow: hidden;">
+		
+		<div style="width:100%; height:200px; background-color:none; position: relative; z-index:2; margin:0; padding:0;"></div>
+		<div style="width:100%; z-index: -200;position:relative;top:550px;">
+		<div style="width:1000px; margin:auto; height:2900px;">
+			<section id="sec1" style="height:2000px;">
+				<div id="main" style="position: absolute; top:190px; left:50%; transform: translateX(-50%); ">
+				<h2>길거리 빌런</h2>
+				<p>길을 지니는 시민들을 불쾌하게 하거나 위협을 주는 사람들로<br> 본인은 심각성을 인지하지 못한다.</p> 
+				</div>
+				<div id="sub1" style="position: absolute; top:520px; right:230px; width: 500px;opacity: 0; ">
+				<h2>담배빵 빌런</h2>
+				<p>당신이 길거리에서 무심코 휘두른 담배가 성인 뿐 아니라 아이들을 위협하고 있다는 사실 알고 계신가요? 담배를 쥐은 손은  아이들의 눈높이에 위치하고 담배연기는 아이들의 코높이에 매우 근접하게 있습니다. 아이들 뿐만 아니라 손에 담배를 들고 휘적거리는 손은 다른 사람을 다치게 할 수 있습니다.</p>
+				</div>
+				<img src="cigar.jpg" id="bil1">
+
+				<div id="sub2" style="position: absolute; top:920px; right:230px; width: 500px; opacity: 0;">
+				<h2>쓰레기 투척 빌런</h2>
+				<p>미관상 좋지 않을 뿐 아니라 통행에 방해되는 쓰레기들. '나 하나쯤은 괜찮겠지'하며 은근슬쩍 쓰레기를 버리신 적 없으신가요? 쓰레기가 하나 둘 쌓여 쓰레기 무덤이 되는 것 처럼, 당신의 양심도 하나 둘씩 더럽혀 집니다. </p>
+				</div>
+				<img src="trash.jpg" id="bil2">
+				
+
+				<div id="sub3" style="position: absolute; top:1320px; right:230px; width: 500px; opacity: 0;">
+				<h2>길막 빌런</h2>
+				<p>좁은 길거리, 당신이 낀 팔짱이 누군가의 소중한 시간을 빼앗고 있습니다. 당신의 친구 혹은 연인과 함께이고픈 마음은 잠시 놓아놓고 길을 지나는 사람들을 배려하는 멋진 모습을 보이는 건 어떨까요?</p>
+				</div>
+				<div id="bil3"><img src="cross.jpg" style="width:500px; position: absolute; left:-50px;"></div>
+				
+				<div id="sub4" style="position: absolute; top:1720px; right:230px; width: 500px; opacity: 0;">
+				<h2>칵퉤 빌런</h2>
+				<p>오늘 하루도 당신 때문에 몇 사람들은 땅만 보고 걷습니다. 길을 걷다보면 어느순간 신발 밑창이 축축해지고 기분이 나빠집니다. 또 지나가는 순간에 당신의 침에 맞게 되면 침이 아닌 독침을 꽂고 싶습니다.</p>
+				</div>
+				<div id="bil4"><img src="welk.jpg" style="width:500px;"></div>
+
+
+				<h2 id="end">당신도 혹시<br><span style="color:red;"> '길거리 빌런'</span> 아닌가요?</h2>
+
+				
+		
+			</section>
+			
+				
+		</div>
+	</div>
+		<a href="#" id="screen" onclick="return false;"></a>
+		<div id="pan"><p id="sc">score</p><input type="text" id="score" value="0" readonly="true"></div>
+
+		<script type="text/javascript" src="lib/prototype.js"></script>
+		<script type="text/javascript" src="src/dung.js"></script>
+		<script type="text/javascript">
+			Event.observe(window, "load", function() {
+				new DungGame("screen", 15, "score");
+			});
+
+		</script>
+		<script type="text/javascript">
+			window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		console.log(t);
+		monitor.innerHTML = t.toFixed(1);
+
+		if(t>900){
+				sub1.style.animation = "appear 1s forwards";	
+			}else{sub1.style.animation = "";}
+		if(t>1300){
+				sub2.style.animation = "appear 1s forwards";	
+			}else{sub2.style.animation = "";}
+		if(t>1700){
+				sub3.style.animation = "appear 1s forwards";	
+			}else{sub3.style.animation = "";}
+		if(t>2100){
+				sub4.style.animation = "appear 1s forwards";	
+			}else{sub4.style.animation = "";}	
+		if(t>2700){
+				end.style.animation = "ho 3s forwards";	
+			}else{end.style.animation = "";}
+		}
+		</script>
+		<link rel="stylesheet" media="screen" type="text/css" href="dung.css" />
+
+
+	</body>
+	<footer style="position:absolute;top: 715px;left:50%; transform:translateX(-50%);font-family: 'Press Start 2P', cursive;color:white;font-size: 10px;">Copyrightⓒ2019 limhyojin All rights reserved.</footer>
+</html>

@@ -1,0 +1,94 @@
+ @font-face {
+      font-family: "DungGeunMo";
+      src: url('DungGeunMo.woff');
+    }
+#screen {
+	position: absolute;
+
+	border:1px solid gray;
+	width:60%; height:680px;
+	display:block;		
+	margin: auto;
+	left:50%; transform:translateX(-50%);
+	top: 15px;
+	text-decoration:none;
+	background-color:white;
+	color:#000;
+}
+
+#score {
+	position:absolute;		
+	
+	background-color:transparent;
+	margin:auto;
+	color:white;
+	border:0px;
+	left:30px;
+	top:50px;
+	font-size:30px;
+	font-family: 'Press Start 2P', cursive;
+	z-index: 100;
+	
+	cursor:default;
+}
+
+#pan {
+	position: absolute;
+	background-image: url(scorepan.png);
+	background-repeat: no-repeat;
+	width:160px;
+	height:650px;
+	top:20px;
+	left:8%;
+	
+}
+#sc {
+	position: absolute;
+	font-family: 'Press Start 2P', cursive;
+	color:white;
+	left:30px;
+	top:24px;
+
+
+}
+
+h2, p{margin:0; padding: 0; text-align: center; word-spacing: -2px; word-break: keep-all;}
+
+#main h2 {font-family: DungGeunMo; font-size: 60px; line-height: 1.3; color:black;}
+#main p{font-family: 'Noto Sans KR';text-align: center;margin-top:20px; font-size: 22px;}
+
+#sec1 img {position:absolute;}
+#bil1 {top:520px; width: 450px;}
+#bil2 {top:920px; width: 450px;}
+#bil3 {top:1320px;width: 450px;height:275px;overflow: hidden;position: absolute;}
+
+#bil4 {top:1720px;width: 450px;height:255px;overflow: hidden;position: absolute; }
+
+#sub1 h2{font-family: DungGeunMo; font-size: 30px; line-height: 1.6; color:black; text-align: left;}
+#sub1 p{font-family: 'Noto Sans KR';text-align: left;margin-top:15px; font-size: 22px;}
+
+#sub2 h2{font-family: DungGeunMo; font-size: 30px; line-height: 1.6; color:black; text-align: left;}
+#sub2 p{font-family: 'Noto Sans KR';text-align: left;margin-top:15px; font-size: 22px;}
+
+#sub3 h2{font-family: DungGeunMo; font-size: 30px; line-height: 1.6; color:black; text-align: left;}
+#sub3 p{font-family: 'Noto Sans KR';text-align: left;margin-top:15px; font-size: 22px;}
+
+#sub4 h2{font-family: DungGeunMo; font-size: 30px; line-height: 1.6; color:black; text-align: left;}
+#sub4 p{font-family: 'Noto Sans KR';text-align: left;margin-top:15px; font-size: 22px;}
+
+#another {font-family: DungGeunMo; font-size: 30px; line-height: 1.6; color:black; text-align: left; position: absolute; top:3000px;}
+
+#end {font-family: DungGeunMo;opacity:0; font-size: 60px; line-height: 1.3; color:black; position: absolute; top:2400px; left:50%; transform:translateX(-50%);}
+
+#monitor{position: fixed; background: black;padding: 5px; top:0; right:0;width: 70px;height:20px; color:white;z-index: 500;}
+
+@keyframes appear{
+
+			from{opacity: 0; right: 100px;}
+			to{opacity: 1; right:230px;}
+		}
+@keyframes ho{
+
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}		
