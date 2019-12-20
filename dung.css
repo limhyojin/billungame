@@ -52,6 +52,7 @@
 
 }
 
+
 h2, p{margin:0; padding: 0; text-align: center; word-spacing: -2px; word-break: keep-all;}
 
 #main h2 {font-family: DungGeunMo; font-size: 60px; line-height: 1.3; color:black;}
@@ -80,7 +81,7 @@ h2, p{margin:0; padding: 0; text-align: center; word-spacing: -2px; word-break: 
 
 #end {font-family: DungGeunMo;opacity:0; font-size: 60px; line-height: 1.3; color:black; position: absolute; top:2400px; left:50%; transform:translateX(-50%);}
 
-#monitor{position: fixed; background: black;padding: 5px; top:0; right:0;width: 70px;height:20px; color:white;opacity:0;}
+#monitor{position: fixed; background: black;padding: 5px; top:0; right:0;width: 70px;height:20px; color:white;opacity: 0;	}
 
 @keyframes appear{
 
